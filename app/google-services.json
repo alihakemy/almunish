@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "60459485731",
+    "project_id": "orders-bd429",
+    "storage_bucket": "orders-bd429.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60459485731:android:c22186a16dbdf1b7d0bf96",
+        "android_client_info": {
+          "package_name": "com.refreshing.Almuneish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60459485731-9amqappmhkgeuahvjf60o930gelnpup2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCjrP8AYHxYIqNrazhldLMK5mXjeqj9n0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60459485731-9amqappmhkgeuahvjf60o930gelnpup2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

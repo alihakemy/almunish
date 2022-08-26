@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1575" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/drawable/back.xml" value="0.14" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1575" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/drawable/ic_menu_camera.xml" value="0.1575" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.1575" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.1575" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/drawable/side_nav_bar.xml" value="0.1365" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/accepted_item.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/activity_login.xml" value="0.13766566908935443" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/activity_login_as_trader.xml" value="0.13766566908935443" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/activity_main.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/activity_order_details.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/activity_print.xml" value="0.12612227447627192" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/app_bar_main.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/content_main.xml" value="0.15364583333333334" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/fragment_gallery.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/fragment_home.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/fragment_yesterday.xml" value="0.13766566908935443" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/item.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/layout_list.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/nav_header_main.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/new_order_item.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/print.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/print_receipt.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/product_items.xml" value="0.22" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/menu/activity_main_drawer.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/menu/main.xml" value="0.16770833333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Almuneish</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="name">المنعش</string>
+    <string name="OrderOverview">نظرة عامة على الطلب</string>
+    <string name="RecentOrder">الطلبيات الأخيرة</string>
+    <string name="gadad">الجديد</string>
+    <string name="accepted">مقبول</string>
+    <string name="upcoming">القادم</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="phonenumber">رقم الهاتف</string>
+    <string name="password">كلمه السر</string>
+    <string name="logins">دخول</string>
+    <string name="order_overview">عرض الطلبات</string>
+    <string name="log_out">تسجيل خروج</string>
+    <string name="order">الطلب</string>
+    <string name="payment_method">طريقه الدفع</string>
+    <string name="driver">السائق</string>
+    <string name="status">الحاله</string>
+    <string name="address">العنوان</string>
+    <string name="shiping_price">سعر الشحن</string>
+    <string name="discount">الخصم</string>
+    <string name="subtotal">الاجمالى</string>
+    <string name="price">السعر</string>
+
+    <string name="ALL">عرض الكل</string>
+    <string name="AddComment">اضف تعليق</string>
+    <string name="rate">التقيم</string>
+    <string name="ProductDetails">تفاصيل المنتج</string>
+    <string name="cancel">Cancel</string>
+    <string name="NearByYou">استكشف الاقرب اليك</string>
+    <string name="harf">حرف مميزه</string>
+    <string name="Projects">مشاريع مميزه</string>
+    <string name="locations">موقعى</string>
+    <string name="searchNear">ابحث عن الاماكن القريبه</string>
+    <string name="details">التفاصل</string>
+    <string name="offers">العروض</string>
+    <string name="discover">استكشف اخر العروض المميزه</string>
+    <string name="Fav">المفضله</string>
+    <string name="Fav2">الاماكن المفضله لديك</string>
+    <string name="supplier">دخول التجار</string>
+    <string name="account">الحساب</string>
+    <string name="join">طلب انضمام</string>
+    <string name="notifications">الاشعارات</string>
+    <string name="about">عن تطبيق</string>
+    <string name="share">مشاركه</string>
+    <string name="contactUs">اتصل بنا</string>
+    <string name="english">انجليزى </string>
+    <string name="arabic">عربى </string>
+    <string name="recent_order">السجل</string>
+    <string name="yesterday">امس</string>
+    <string name="today">اليوم</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
