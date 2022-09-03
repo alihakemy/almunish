@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
 
-    android:layoutDirection="ltr"
 
     android:layout_height="match_parent">
 
@@ -43,7 +42,6 @@
                     android:layout_marginBottom="8dp"
                     android:gravity="center"
                     android:text="TextView"
-                    android:textAlignment="viewEnd"
 
                     android:textColor="@color/black"
                     android:textSize="30sp"
@@ -58,15 +56,15 @@
                     android:id="@+id/textView24"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="16dp"
                     android:gravity="center"
-                    android:text="العنوان"
+                    android:text="@string/address"
                     android:textColor="@color/black"
-                    android:textSize="30sp"
 
+                    android:textSize="30sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
                 <ImageView
@@ -87,7 +85,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="32dp"
                     android:gravity="center"
-                    android:text="Almuneish Receipt - فاتوره "
+                    android:text="@string/almuneish_receipt"
                     android:textColor="@color/black"
                     android:textSize="30sp"
                     android:textStyle="bold"
@@ -111,7 +109,7 @@
                     android:layout_width="0dp"
                     android:layout_height="1dp"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginBottom="16dp"
                     android:background="@color/black"
@@ -119,7 +117,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/paymentMethod3" />
+                    app:layout_constraintTop_toBottomOf="@+id/userNotes" />
 
                 <ImageView
                     android:id="@+id/textView25"
@@ -205,19 +203,34 @@
                     android:id="@+id/textView29"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="8dp"
 
+                    android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:gravity="center"
-                    android:text="العميل "
+                    android:text="@string/client"
                     android:textColor="@color/black"
-                    android:textSize="30sp"
 
+                    android:textSize="30sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@+id/paymentMethod2"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/paymentMethod" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+
+                    android:gravity="center"
+                    android:text="@string/notes"
+                    android:textColor="@color/black"
+
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/paymentMethod3" />
 
                 <TextView
                     android:id="@+id/paymentMethod"
@@ -231,7 +244,6 @@
                     android:gravity="center"
                     android:padding="10dp"
                     android:text="TextView"
-                    android:textAlignment="viewEnd"
                     android:textColor="@color/black"
                     android:textSize="30sp"
 
@@ -249,7 +261,6 @@
                     android:layout_marginTop="16dp"
                     android:gravity="center"
                     android:text="TextView"
-                    android:textAlignment="viewEnd"
                     android:textColor="@color/black"
                     android:textSize="30sp"
 
@@ -265,7 +276,6 @@
 
                     android:gravity="center"
                     android:text="TextView"
-                    android:textAlignment="viewEnd"
                     android:textColor="@color/black"
                     android:textSize="30sp"
 
@@ -275,17 +285,32 @@
                     app:layout_constraintTop_toBottomOf="@+id/paymentMethod2" />
 
                 <TextView
+                    android:id="@+id/userNotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+                <TextView
                     android:id="@+id/textView15"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="16dp"
                     android:gravity="center"
-                    android:text="الاصناف"
+                    android:text="@string/types"
                     android:textColor="@color/black"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
                 <ImageView
@@ -306,6 +331,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
+                    tools:listitem="@layout/item"
+                    tools:itemCount="2"
                     android:layout_marginEnd="16dp"
                     android:nestedScrollingEnabled="false"
                     android:paddingTop="8dp"
@@ -319,133 +346,128 @@
                     android:id="@+id/textView12"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:gravity="center"
-                    android:text="رسوم التوصيل"
-                    android:textColor="@color/black"
+                    android:text="@string/delievery"
 
+                    android:textColor="@color/black"
                     android:textSize="30sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@+id/textView9"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
                 <TextView
                     android:id="@+id/textView20"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="16dp"
                     android:gravity="center"
-                    android:text="الخصم"
+                    android:text="@string/Discount"
+
+
                     android:textColor="@color/black"
-
-
                     android:textSize="30sp"
-                    android:textStyle="bold"
 
-                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
                 <TextView
                     android:id="@+id/textView30"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="8dp"
                     android:gravity="center"
-                    android:text="الاجمالى"
+                    android:text="@string/totals"
+
+
                     android:textColor="@color/black"
-
-
                     android:textSize="30sp"
-                    android:textStyle="bold"
 
+                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="@+id/disCount3"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
                     android:id="@+id/shippingPrice"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
 
+                    android:layout_marginEnd="16dp"
                     android:text="TextView"
                     android:textAlignment="viewEnd"
+
+
                     android:textColor="@color/black"
-
-
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="@+id/textView12"
-                    app:layout_constraintEnd_toStartOf="@+id/textView12"
-                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/textView12" />
 
                 <TextView
                     android:id="@+id/disCount"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginEnd="16dp"
                     android:text="TextView"
+
+
                     android:textAlignment="viewEnd"
-
-
                     android:textColor="@color/black"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="@+id/textView20"
-                    app:layout_constraintEnd_toStartOf="@+id/textView20"
-                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/textView20" />
 
                 <TextView
                     android:id="@+id/disCount3"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginEnd="16dp"
+
+
                     android:text="TextView"
-
-
                     android:textAlignment="viewEnd"
                     android:textColor="@color/black"
                     android:textSize="30sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/textView20"
-                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
                 <TextView
                     android:id="@+id/textView9"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
                     android:gravity="center"
-                    android:text="المجموع"
+                    android:text="@string/total"
+
+
                     android:textColor="@color/black"
-
-
                     android:textSize="30sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
                 <TextView
                     android:id="@+id/total"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+
+                    android:layout_marginEnd="16dp"
 
                     android:text="TextView"
-
                     android:textColor="@color/black"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="@+id/textView9"
-                    app:layout_constraintEnd_toStartOf="@+id/textView9"
-                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/textView9" />
 
                 <TextView

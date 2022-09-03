@@ -2,10 +2,15 @@ package com.refreshing.fcm.channelManager
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
+import android.content.ContentResolver
 import android.content.Context
+import android.media.AudioAttributes
+import android.net.Uri
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationManagerCompat
+import com.refreshing.R
+
 
 class NotificationChannelObject {
     var channelName:String?=null
@@ -47,6 +52,8 @@ object NotificationChannelManager {
     private fun createNotificationChannel(context: Context, channel: NotificationChannelObject) {
         // Create the NotificationChannel, but only on API 26+ because
         // the NotificationChannel class is new and not in the support library
+
+
 
         val importance = android.app.NotificationManager.IMPORTANCE_DEFAULT
         val channel =

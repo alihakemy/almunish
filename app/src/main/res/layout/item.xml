@@ -13,6 +13,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content">
 
         <TextView
@@ -20,15 +21,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
+            android:layout_marginEnd="8dp"
             android:paddingTop="@dimen/nav_header_vertical_spacing"
-            android:text="1 x"
+            android:text="price"
             android:textAlignment="viewStart"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/feature"
-            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <TextView
@@ -42,7 +44,7 @@
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/price"
+            app:layout_constraintEnd_toStartOf="@+id/count"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,24 +52,21 @@
             android:id="@+id/feature"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
             android:text="TextView"
-            android:textAlignment="viewStart"
             android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <TextView
-            android:id="@+id/price"
+            android:id="@+id/count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="7dp"
             android:layout_marginEnd="24dp"
-            android:text="@string/price"
+            android:text="count"
             android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="bold"

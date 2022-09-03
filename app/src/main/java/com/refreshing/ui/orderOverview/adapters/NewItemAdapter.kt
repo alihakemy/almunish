@@ -55,7 +55,7 @@ class NewItemAdapter : RecyclerView.Adapter<NewItemAdapter.NewViewHolder>() {
             binding.orderName.text="# No."+get.orderNumber.toString()
             binding.itemCount.text=get.productCount.toString() +" Item"
 
-            binding.time.text= timeSince(convertToMillisecond(get.orderCreated.toString()+":00"))
+            binding.time.text= timeSince(convertToMillisecond(get.orderCreated.toString()+":00"),binding.root.context)
 
 
             binding.root.setOnClickListener {

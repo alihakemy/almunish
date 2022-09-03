@@ -84,7 +84,7 @@ class OrderDetails : BaseActivity(), AdapterView.OnItemSelectedListener {
             binding.status.text=it.data?.first()?.status.toString()
 
             binding. timeFrom.text=
-                timeSince(convertToMillisecond(it.data?.first()?.orderCreated.toString()+":00"))
+                timeSince(convertToMillisecond(it.data?.first()?.orderCreated.toString()+":00"),binding.root.context)
 
 
             it.data?.first()?.products?.let { it1 -> adapter?.submitNew(it1) }

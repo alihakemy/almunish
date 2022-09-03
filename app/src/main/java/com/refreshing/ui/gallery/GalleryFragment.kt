@@ -15,8 +15,9 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.refreshing.databinding.FragmentGalleryBinding
 import com.refreshing.ui.gallery.fragments.Yesterday
 import com.refreshing.ui.gallery.fragments.today
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class GalleryFragment : Fragment() {
 
     private var binding: FragmentGalleryBinding? = null
@@ -30,8 +31,9 @@ class GalleryFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View {
         val galleryViewModel =
-            ViewModelProvider(this).get(GalleryViewModel::class.java)
+            activity?.let { ViewModelProvider(it).get(GalleryViewModel::class.java) }
 
+        galleryViewModel?.getOrderHistory()
         binding = FragmentGalleryBinding.inflate(inflater, container, false)
         val root: View = binding?.root!!
 

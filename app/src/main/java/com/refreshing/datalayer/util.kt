@@ -1,9 +1,11 @@
 package com.refreshing.datalayer
 
+import android.content.Context
 import android.graphics.Color
 import android.text.SpannableString
 import android.text.style.AbsoluteSizeSpan
 import android.text.style.ForegroundColorSpan
+import com.refreshing.R
 import java.text.SimpleDateFormat
 
 fun String.setFontSizeForPath(path: String, fontSizeInPixel: Int, colorCode: String = "#FF000000"): SpannableString {
@@ -32,7 +34,7 @@ fun convertToMillisecond(date: String): Long {
 
 }
 
-fun timeSince(date: Long): String {
+fun timeSince(date: Long,context:Context): String {
 
     var seconds = 0.0
     seconds = if (date > System.currentTimeMillis()) {
@@ -58,7 +60,7 @@ fun timeSince(date: Long): String {
     }
     interval = seconds / 3600;
     if (interval > 1) {
-        return Math.floor(interval).toInt().toString() + " ساعه"
+        return Math.floor(interval).toInt().toString() + " "+context.getString(R.string.hour)
     }
     interval = seconds / 60;
     if (interval > 1) {

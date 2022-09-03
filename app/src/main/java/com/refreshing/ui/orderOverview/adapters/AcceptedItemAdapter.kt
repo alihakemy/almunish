@@ -47,7 +47,7 @@ class AcceptedItemAdapter : RecyclerView.Adapter<AcceptedItemAdapter.NewViewHold
         fun bindData(get: Accepted) {
             binding.textView5.text="No. #"+get?.orderNumber
             binding.feature.text=get.productCount.toString() +" Item"
-            binding.feature2.text= timeSince(convertToMillisecond(get.orderCreated.toString()+":00"))
+            binding.feature2.text= timeSince(convertToMillisecond(get.orderCreated.toString()+":00"),binding.root.context)
             binding.root.setOnClickListener {
                 OrderDetails.startOrderDetails(it.context, get.id.toString())
             }

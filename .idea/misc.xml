@@ -20,12 +20,14 @@
         <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/content_main.xml" value="0.15364583333333334" />
         <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/fragment_gallery.xml" value="0.16770833333333332" />
         <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/fragment_home.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/fragment_today.xml" value="0.13766566908935443" />
         <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/fragment_yesterday.xml" value="0.13766566908935443" />
-        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/item.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/item.xml" value="0.22" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/item_list.xml" value="0.22" />
         <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/layout_list.xml" value="0.16770833333333332" />
         <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/nav_header_main.xml" value="0.16770833333333332" />
         <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/new_order_item.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/print.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/print.xml" value="0.10666666666666667" />
         <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/print_receipt.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/layout/product_items.xml" value="0.22" />
         <entry key="..\:/Users/Ali/AndroidStudioProjects/refreshing/app/src/main/res/menu/activity_main_drawer.xml" value="0.14666666666666667" />

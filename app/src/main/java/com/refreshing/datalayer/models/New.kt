@@ -22,11 +22,23 @@ data class New(
     @SerializedName("status")
     var status: String?,
     @SerializedName("total")
-    var total: Double?,
+    var total: String?,
     @SerializedName("price_ship")
     var price_ship: Double?,
     @SerializedName("discount")
     var discount: Double?,
     @SerializedName("address")
     var address: String?,
+
+
+
+
+
+
+
+
+
+
+
+
 ) : Parcelable

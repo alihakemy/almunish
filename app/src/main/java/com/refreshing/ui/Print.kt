@@ -6,6 +6,7 @@ import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Color
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.util.DisplayMetrics
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.dantsu.escposprinter.exceptions.EscPosConnectionException
 import com.google.zxing.BarcodeFormat
 import com.journeyapps.barcodescanner.BarcodeEncoder
+import com.refreshing.R
 import com.refreshing.databinding.PrintBinding
 import com.refreshing.databinding.PrintReceiptBinding
 import com.refreshing.datalayer.models.orderDetails.OrderDetails
@@ -45,9 +47,18 @@ class Print : BaseActivity() {
 
         val item = intent.getParcelableExtra<OrderDetails>("order")
 
+        val preferences= PreferenceManager.getDefaultSharedPreferences(this)
 
-        binding.orderNumber.text = "ORDER NO.\n${item?.data?.first()?.orderNumber}".setFontSizeForPath(
-            item?.data?.first()?.orderNumber.toString(),100)
+        if(preferences.getString("lang","").equals("ar")){
+            binding.orderNumber.text = " رقم الطلب .\n${item?.data?.first()?.orderNumber}".setFontSizeForPath(
+                item?.data?.first()?.orderNumber.toString(),100)
+
+        }else
+        {
+            binding.orderNumber.text = "ORDER NO.\n${item?.data?.first()?.orderNumber}".setFontSizeForPath(
+                item?.data?.first()?.orderNumber.toString(),100)
+
+        }
 
 
         binding.shippingPrice.text = "${item?.data?.first()?.price_ship}"
@@ -55,10 +66,14 @@ class Print : BaseActivity() {
         binding.total.text  ="${item?.data?.first()?.total_without_ship}"
         binding.disCount3.text="${ item?.data?.first()?.total}"
 
-
+binding.userNotes.text=item?.data?.first()?.note.toString()
         adapter = ProductAdapter()
-        binding?.recyclerViewNewItems?.layoutManager = LinearLayoutManager(this,
-            LinearLayoutManager.VERTICAL, false)
+        val lay =LinearLayoutManager(this,
+            LinearLayoutManager.VERTICAL, true)
+        binding?.recyclerViewNewItems?.layoutManager = lay
+
+        lay.setReverseLayout(true)
+
         binding?.recyclerViewNewItems?.adapter = adapter
         item?.data?.first()?.products?.let { it1 -> adapter?.submitNew(it1) }
 
@@ -69,7 +84,8 @@ class Print : BaseActivity() {
         binding.status3.text= item?.data?.first()?.address
         binding.paymentMethod3.text=item?.data?.first()?.phone
 
-        binding.textView15.text= "يوجد عدد ( " + adapter?.itemCount + " ) صنف"
+        binding.textView15.text= getString(R.string.Founed) + adapter?.itemCount + getString(R.string.tt)
+
 
         binding.button?.setOnClickListener {
 

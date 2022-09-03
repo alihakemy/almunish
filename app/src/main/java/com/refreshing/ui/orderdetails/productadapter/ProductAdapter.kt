@@ -60,7 +60,7 @@ class ProductAdapter : RecyclerView.Adapter<ProductAdapter.NewViewHolder>() {
                 binding.feature.visibility=View.VISIBLE
             }
 
-            binding.price.text="x "+get.qyt.toString()
+            binding.count.text="x "+get.qyt.toString()
 
 
         }

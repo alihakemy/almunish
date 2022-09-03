@@ -71,6 +71,7 @@ class MainActivity : BaseActivity(){
         FirebaseMessaging.getInstance().subscribeToTopic("muneshOrder")
 
 
+        FirebaseMessaging.getInstance().subscribeToTopic("muneshOrderTest")
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannelManager.initChannel(this)
         }
@@ -115,6 +116,8 @@ class MainActivity : BaseActivity(){
 
                 Toast.makeText(this, "logOut", Toast.LENGTH_SHORT).show()
         }
+
+
 
     }
 

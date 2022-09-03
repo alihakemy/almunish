@@ -42,7 +42,7 @@ class MessagingServices : FirebaseMessagingService() {
             orderNumber = order_number,
             productCount = productCount?.toInt(),
             orderCreated = order_created,
-            total = total?.toDouble(),
+            total = total?.toDouble()?.toString(),
             discount = dicount?.toDouble() ?: 0.0, address = address
         )
         val intent = Intent(this, OrderDetails::class.java)

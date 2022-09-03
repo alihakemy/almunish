@@ -61,5 +61,23 @@
     <string name="yesterday">امس</string>
     <string name="today">اليوم</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="AcceptedCount">عدد طلبات مقبوله </string>
+    <string name="KG">د.ك</string>
+    <string name="countRefused">عدد طلبات مرفوضه</string>
+    <string name="CompleteCount">عدد طلبات مكتمله </string>
+    <string name="CountShiped">عدد طلبات مشحونه </string>
+    <string name="orders">الطلبات</string>
+    <string name="Waiting"> عدد طلبات الانتظار </string>
+    <string name="notes">ملاحظات</string>
+    <string name="client">العميل</string>
+    <string name="types">الاصناف</string>
+    <string name="almuneish_receipt">Almuneish Receipt - فاتوره</string>
+    <string name="total">المجموع</string>
+    <string name="delievery">رسوم التوصيل</string>
+    <string name="Discount">الخصم</string>
+    <string name="totals">الاجمالى</string>
+    <string name="Founed">\"يوجد عدد ( \"</string>
+    <string name="tt">\" ) صنف\"</string>
+    <string name="hour"> ساعه</string>
 
 </resources>

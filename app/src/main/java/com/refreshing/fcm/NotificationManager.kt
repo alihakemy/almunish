@@ -2,8 +2,10 @@ package com.refreshing.fcm
 
 import android.app.NotificationManager
 import android.app.PendingIntent
+import android.content.ContentResolver
 import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
@@ -45,7 +47,6 @@ object NotificationManager {
             .setAutoCancel(true)
 
             .setPriority(NotificationCompat.PRIORITY_HIGH)
-
             .setStyle(
                 NotificationCompat.MessagingStyle(title)
                     .addMessage(content, System.currentTimeMillis(), title)

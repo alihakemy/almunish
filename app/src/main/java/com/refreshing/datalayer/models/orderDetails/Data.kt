@@ -37,6 +37,8 @@ data class Data(
     var address:String?,
     @SerializedName("phone")
     var phone: String?,
+    @SerializedName("note")
+    var note:String?,
 
     @SerializedName("lat")
     var lat:String? ="48",

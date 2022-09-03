@@ -2,6 +2,7 @@ package com.refreshing.datalayer
 
 import com.refreshing.datalayer.models.Orders
 import com.refreshing.datalayer.models.driver.DriverModel
+import com.refreshing.datalayer.models.ordersHistory.OrderHistory
 import com.refreshing.ui.orderdetails.OrderDetails
 import retrofit2.http.*
 
@@ -40,9 +41,13 @@ interface apis {
     )
     @GET("api/drivers")
     suspend fun getDrivers():DriverModel
+
     @POST("api/checkDriver")
     suspend fun checkDriver(
         @Body hashMap: HashMap<String, String>
 
     )
+
+    @GET("api/ordersHistory")
+    suspend fun  getOrdersHistory():OrderHistory
 }
