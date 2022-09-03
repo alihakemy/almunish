@@ -76,6 +76,7 @@ class OrderDetails : BaseActivity(), AdapterView.OnItemSelectedListener {
             binding.textView.text=" Almuneish "+it.data?.first()?.user.toString()
 
             binding.orderNumber.text=" # "+it.data?.first()?.orderNumber.toString()
+            binding.userNotes.text=item?.data?.first()?.note.toString()
 
 
             binding.textView6.text=" # "+ it.data?.first()?.orderNumber.toString()

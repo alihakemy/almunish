@@ -280,15 +280,45 @@
                                     android:id="@+id/textView23"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="24dp"
 
+                                    android:layout_marginTop="16dp"
                                     android:text="@string/address"
                                     android:textColor="@color/black"
                                     android:textSize="20sp"
                                     app:layout_constraintEnd_toEndOf="@+id/textView8"
-                                    app:layout_constraintHorizontal_bias="0.498"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="@+id/textView8"
+                                    app:layout_constraintTop_toBottomOf="@+id/userNotes" />
+
+                                <TextView
+                                    android:id="@+id/textView40"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/notes"
+
+                                    android:layout_marginTop="16dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"
+                                    app:layout_constraintEnd_toEndOf="@+id/textView8"
+                                    app:layout_constraintHorizontal_bias="0.0"
                                     app:layout_constraintStart_toStartOf="@+id/textView8"
                                     app:layout_constraintTop_toBottomOf="@+id/status" />
+
+
+                                <TextView
+                                    android:id="@+id/userNotes"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginTop="16dp"
+                                    android:gravity="center"
+                                    android:text="TextView"
+
+                                    android:textColor="@color/black"
+                                    android:textSize="30sp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
                                 <androidx.recyclerview.widget.RecyclerView
                                     android:id="@+id/recyclerViewNewItems"
